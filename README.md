@@ -25,7 +25,7 @@ Get up and running with these steps.
 - Django (install via `pip install django`)
 - Selenium (install via `pip install selenium`)
 
-### Installation
+  ## Installation
 
  1. Clone the repository:
 
@@ -42,9 +42,9 @@ Get up and running with these steps.
  4.Start the development server:
    python manage.py runserver
 
-###💡 Usage
+### 💡Usage
 
-#Scraping YouTube data has never been simpler:
+**Scraping YouTube data has never been simpler:
 
     Enter a YouTube video URL in the input field.
     Click "Scrap" to start the scraping process.
@@ -52,14 +52,15 @@ Get up and running with these steps.
 
 ###🚀 Technologies
 
-#Powerful tools used to build this project:
+**Powerful tools used to build this project:
 
    1. Django
    2. Selenium
     3.HTML/CSS
 
 ###🤝 Contributing
-#Contribute and make this project even better:
+
+**Contribute and make this project even better:
 
       Fork the repository.
       Create a new branch: git checkout -b feature-branch
