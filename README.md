@@ -25,7 +25,24 @@ Get up and running with these steps.
 - Django (install via `pip install django`)
 - Selenium (install via `pip install selenium`)
 
-  ## Installation
+### 💡Usage
+
+**Scraping YouTube data has never been simpler:
+
+    Enter a YouTube video URL in the input field.
+    Click "Scrap" to start the scraping process.
+    Discover insights like video title, upload date, views, user data, and comments on the results page.
+
+### 🚀 Technologies
+
+**Powerful tools used to build this project:
+
+   1. Django
+   2. Selenium
+    3.HTML/CSS
+
+
+## Installation
 
  1. Clone the repository:
 
@@ -42,23 +59,7 @@ Get up and running with these steps.
  4.Start the development server:
    python manage.py runserver
 
-### 💡Usage
-
-**Scraping YouTube data has never been simpler:
-
-    Enter a YouTube video URL in the input field.
-    Click "Scrap" to start the scraping process.
-    Discover insights like video title, upload date, views, user data, and comments on the results page.
-
-###🚀 Technologies
-
-**Powerful tools used to build this project:
-
-   1. Django
-   2. Selenium
-    3.HTML/CSS
-
-###🤝 Contributing
+### 🤝 Contributing
 
 **Contribute and make this project even better:
 
@@ -68,11 +69,11 @@ Get up and running with these steps.
       Push to the branch: git push origin feature-branch
       Open a pull request.
 
-###📝 License
+### 📝 License
 
   This project is licensed under the MIT License. Respect the license terms.
 
-###🙌 Acknowledgments
+### 🙌 Acknowledgments
 
     Selenium for web automation magic.
     Django for robust web application framework.
