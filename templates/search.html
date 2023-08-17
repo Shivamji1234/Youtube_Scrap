@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+
+{% endblock %}
+{% block css %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    .content {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+
+    .content h1 {
+        text-align: center;
+        color: #007bff;
+    }
+
+    .form {
+        margin-top: 30px;
+    }
+
+    .form form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form input[type="text"] {
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        outline: none;
+        flex: 1;
+    }
+
+    .form input[type="submit"] {
+        padding: 10px 20px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #ffffff;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .form input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .error-message {
+        color: red;
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+<script>
+    function validateForm(event) {
+        event.preventDefault(); // Prevent form submission
+
+        var inputValue = document.getElementById("content").value.trim();
+        var errorMessageElement = document.getElementById("error-message");
+
+        // Regular expression pattern to match YouTube URLs
+        var youtubeUrlPattern = /^(https?:\/\/)?(www\.)?youtube\.com\/watch\?v=[a-zA-Z0-9_-]{11}/;
+
+        if (inputValue === "") {
+            errorMessageElement.textContent = " Enter Url.";
+        } else if (!youtubeUrlPattern.test(inputValue)) {
+            errorMessageElement.textContent = "Enter a valid YouTube URL.";
+        } else {
+            errorMessageElement.textContent = "Scrap Data are coming soon.";
+            // Submit the form if the input is a valid YouTube URL
+            event.target.submit();
+        }
+    }
+</script>
+
+{% endblock  %}
+
+{% block body %}
+<div class="content">
+    <h1>Search Youtube Url</h1>
+    <div class="form">
+        <form action="comment/" method="POST" onsubmit="validateForm(event)">
+            {% csrf_token %}
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Search">
+        </form>
+        <div class="error-message" id="error-message"></div>
+    </div>
+</div>
+{% endblock %}

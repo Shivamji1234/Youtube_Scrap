@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Scrap Data HTML Page</title>
+{% endblock %}
+
+{% block css %}
+<style>
+    /* Your CSS styles here */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    /* Style user images */
+    td img {
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+    }
+
+    /* Highlight rows on hover */
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+    <h1>Title: {{ title }}</h1>
+    <p>Upload_Date: {{ date }}</p>
+    <p>Views: {{ view }}</p>
+
+    <h2>User Comments</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Username</th>
+                <th>Comments</th>
+                <th>Likes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in u %}
+                <tr>
+                    <td><img src="{{ i.img }}"  alt={{ i.us }}></td>
+                    <td>{{ i.us }}</td>
+                    <td>{{ i.comment }}</td>
+                    <td>{{ i.like }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
