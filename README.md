@@ -41,24 +41,6 @@ Get up and running with these steps.
    2. Selenium
     3.HTML/CSS
 
-
-## Installation
-
- 1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/YouTubeScraper.git
-   cd YouTubeScraper
-
- 2.  Install the required dependencies:
-   pip install -r requirements.txt
-
- 3. Set up the Django database:
-    python manage.py migrate
-
- 4.Start the development server:
-   python manage.py runserver
-
 ### 🤝 Contributing
 
 **Contribute and make this project even better:
@@ -78,6 +60,26 @@ Get up and running with these steps.
     Selenium for web automation magic.
     Django for robust web application framework.
     Created with ❤️ by Your Name
+
+
+## Installation
+
+ 1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/YouTubeScraper.git
+   cd YouTubeScraper
+
+ 2.  Install the required dependencies:
+   pip install -r requirements.txt
+
+ 3. Set up the Django database:
+    python manage.py migrate
+
+ 4.Start the development server:
+   python manage.py runserver
+
+
 
 
 
