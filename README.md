@@ -27,20 +27,21 @@ Get up and running with these steps.
 
 ### Installation
 
-#1. Clone the repository:
+ 1. Clone the repository:
 
    ```bash
    git clone https://github.com/your-username/YouTubeScraper.git
    cd YouTubeScraper
 
-#2.  Install the required dependencies:
+ 2.  Install the required dependencies:
    pip install -r requirements.txt
 
-#3. Set up the Django database:
+ 3. Set up the Django database:
     python manage.py migrate
 
-#4.Start the development server:
+ 4.Start the development server:
    python manage.py runserver
+
 ###💡 Usage
 
 #Scraping YouTube data has never been simpler:
